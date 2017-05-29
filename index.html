@@ -1,0 +1,92 @@
+<!-- You'll create a trivia game that shows only one question until the player answers it or their time runs out.
+
+* If the player selects the correct answer, show a screen congratulating them for choosing the right option. After a few seconds, display the next question -- do this without user input.
+
+* The scenario is similar for wrong answers and time-outs.
+
+  * If the player runs out of time, tell the player that time's up and display the correct answer. Wait a few seconds, then show the next question.
+  * If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.
+
+* On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en-us">
+ <head>
+	<meta charset="utf-8">
+ 	<title>Trivia Game -- Mumble Rap Edition</title>
+
+<!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+ <!-- JQuery File -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <!-- external JS game file -->
+  <script type="text/javascript" src="assets/javascript/gamelogic.js"></script>
+
+ </head>
+ <body>
+
+ <!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+  	<div class = "row">
+  		<div class = "col-lg-10 col-lg-offset-1">
+	  		<div class="panel panel-default">
+	  			<div class="panel-body text-center">
+	  				<div class="row">
+	  					<h1>Hip Hop Trivia</h1>
+	  				</div>
+	  				<div id="gameContainer" class="row">
+	  					<div class="row">
+							<h3>Time Remaining: <span id="timer"></span> Seconds</h3>
+	  					</div>
+	  					<div class="gameArea">
+		  					<div class="row">
+								<h3><span id="questions">Which one is the letter 'a'?</span></h3>
+								<h4><span id="response"></span></h4>
+		  					</div>
+		  					<div class="row">
+								<div class="col-lg-10 col-lg-offset-1">
+									<div class="#image-holder"></div>
+									<div class="row">
+										<div id="answer1" class="btn btn-secondary">
+											<h3>a</h3>
+										</div>
+									</div>
+
+									<div class="row">
+										<div id="answer2" class="btn btn-secondary">
+											<h3>b</h3>
+										</div>
+									</div>
+
+									<div class="row">
+										<div id="answer3" class="btn btn-secondary">
+											<h3>c</h3>
+										</div>
+									</div>
+
+									<div class="row">
+										<div id="answer4" class="btn btn-secondary">
+											<h3>d</h3>
+										</div>
+									</div>
+
+								</div>
+
+		  					</div>
+		  				</div>
+	  				</div>
+					
+				</div>
+	  		</div>
+  		</div>
+
+  	</div>
+
+  </div>
+ 
+ </body>
+ </html>
